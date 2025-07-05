@@ -10,9 +10,6 @@ redirect_from:
 **Associate Professor**  
 Department of Mathematics, University of Padova  
 
-
----
-
 ## Latest News
 
 **26 June 2024**  
