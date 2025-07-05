@@ -5,7 +5,11 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-  
+---
+
+**Associate Professor**  
+Department of Mathematics, University of Padova  
+
 ## Latest News
 
 **26 June 2024**  
