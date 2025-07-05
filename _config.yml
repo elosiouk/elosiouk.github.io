@@ -23,9 +23,9 @@ repository               : "elosiouk/elosiouk.github.io"
 author:
   # Biographic information
   avatar           : "eleonora.png"
-  name             : "Eleonora Losiouk"
+  name             : #"Eleonora Losiouk"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : #"Short biography for the left-hand sidebar"
   employer         : "Università degli Studi di Padova"
   email            : "eleonora.losiouk@unipd.it" 
 
