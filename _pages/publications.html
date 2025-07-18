@@ -11,33 +11,27 @@ author_profile: true
   {% for category in site.publication_category %}
     <h2>{{ category[1].title }}</h2>
     <hr />
-    <ul>
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}{% continue %}{% endif %}
-      <li>
+      <p>
+        {{ post.title }}
         {% if post.pdf %}
-          <a href="{{ post.pdf }}">{{ post.title }}</a>
+          [<a href="{{ post.pdf }}">PDF</a>]
         {% elsif post.paperurl %}
-          <a href="{{ post.paperurl }}">{{ post.title }}</a>
-        {% else %}
-          {{ post.title }}
+          [<a href="{{ post.paperurl }}">PDF</a>]
         {% endif %}
-      </li>
+      </p>
     {% endfor %}
-    </ul>
   {% endfor %}
 {% else %}
-  <ul>
   {% for post in site.publications reversed %}
-    <li>
+    <p>
+      {{ post.title }}
       {% if post.pdf %}
-        <a href="{{ post.pdf }}">{{ post.title }}</a>
+        [<a href="{{ post.pdf }}">PDF</a>]
       {% elsif post.paperurl %}
-        <a href="{{ post.paperurl }}">{{ post.title }}</a>
-      {% else %}
-        {{ post.title }}
+        [<a href="{{ post.paperurl }}">PDF</a>]
       {% endif %}
-    </li>
+    </p>
   {% endfor %}
-  </ul>
 {% endif %}
