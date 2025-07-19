@@ -110,28 +110,3 @@ $xing-color                 : #006567;
 /* ==========================================================================
    CUSTOM BACKGROUND (Light gray texture)
    ========================================================================== */
-
-$background-color: #f8f8f8 !default; // Light gray base
-$body-background-color: $background-color !default;
-
-body {
-  background-color: $background-color;
-  background-image: 
-    linear-gradient(90deg, rgba(200,200,200,0.05) 1px, transparent 1px),
-    linear-gradient(rgba(200,200,200,0.05) 1px, transparent 1px);
-  background-size: 20px 20px; // Grid size
-}
-
-/* Make content areas transparent */
-.page,
-.page__inner-wrap {
-  background: transparent;
-}
-
-/* Optional: Card-like content areas */
-.page__content {
-  background: white;
-  padding: 2em;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
