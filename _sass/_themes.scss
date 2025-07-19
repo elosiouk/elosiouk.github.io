@@ -107,7 +107,7 @@ $xing-color                 : #006567;
    CUSTOM BACKGROUND COLOR
    ========================================================================== */
 
-$background-color: #e6f2ff !default; // Light blue background
+$background-color:  #007bff !default; // Light blue background
 $body-background-color: $background-color !default;
 $primary-color: #0066cc !default; // Complementary blue for accents
 
@@ -119,10 +119,4 @@ body {
 // Make content area transparent
 .page {
   background: transparent;
-}
-
-// Optional: Adjust header/footer if needed
-.masthead,
-.footer {
-  background-color: darken($background-color, 10%);
 }
