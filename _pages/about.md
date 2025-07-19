@@ -7,15 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-**Associate Professor**  
-Department of Mathematics, University of Padova  
 
 ## Latest News
 
-**26 June 2024**  
+**26 June 2025**  
 Our paper "R+R: Matrioska: A User-Centric Defense Against Virtualization-Based Repackaging Malware on Android" will be presented at DEFCON33 as a talk within the Mobile Hacking Community!
 
-**30 September 2024**  
+**30 May 2025**  
 Our paper "Hercules Droidot and the murder on the JNI Express" has been accepted at **Usenix Security '25**! 
 
 **7 May 2025**  
