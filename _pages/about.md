@@ -10,8 +10,14 @@ redirect_from:
 
 ## Latest News
 
+**28 July 2025**  
+The MOOC "Cybersecurity for Citizens and Professionals", which I have been responsible for, is finally online! You can chek it out here: https://www.futurelearn.com/courses/cybersecurity-for-citizens-and-professionals
+
+**26 July 2025**  
+Our paper "Virtualpatch: Distributing Android Security Patches Through Android Virtualization" has been accepted at Computers & Security journal!
+
 **26 June 2025**  
-Our paper "R+R: Matrioska: A User-Centric Defense Against Virtualization-Based Repackaging Malware on Android" will be presented at DEFCON33 as a talk within the Mobile Hacking Community!
+Our paper "Matrioska: A User-Centric Defense Against Virtualization-Based Repackaging Malware on Android" will be presented at DEFCON33 as a talk within the Mobile Hacking Community!
 
 **30 May 2025**  
 Our paper "Hercules Droidot and the murder on the JNI Express" has been accepted at **Usenix Security '25**! 
