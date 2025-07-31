@@ -19,7 +19,15 @@ author_profile: true
     <li class="pub-entry" style="margin-bottom:1.5em;">
       <div>
         {% if post.type %}
-          <span class="pub-type" style="font-weight:bold; text-transform:uppercase; font-size:0.9em; border-radius:4px; padding:2px 8px; background:#2563eb; color:#fff; margin-right:8px;">{{ post.type }}</span>
+          {% if post.type == "journal" %}
+            <span class="pub-type" style="font-weight:bold; text-transform:uppercase; font-size:0.9em; border-radius:4px; padding:2px 8px; background:#059669; color:#fff; margin-right:8px;">{{ post.type }}</span>
+          {% elsif post.type == "conference" %}
+            <span class="pub-type" style="font-weight:bold; text-transform:uppercase; font-size:0.9em; border-radius:4px; padding:2px 8px; background:#2563eb; color:#fff; margin-right:8px;">{{ post.type }}</span>
+          {% elsif post.type == "book" %}
+            <span class="pub-type" style="font-weight:bold; text-transform:uppercase; font-size:0.9em; border-radius:4px; padding:2px 8px; background:#7c3aed; color:#fff; margin-right:8px;">{{ post.type }}</span>
+          {% else %}
+            <span class="pub-type" style="font-weight:bold; text-transform:uppercase; font-size:0.9em; border-radius:4px; padding:2px 8px; background:#6b7280; color:#fff; margin-right:8px;">{{ post.type }}</span>
+          {% endif %}
         {% endif %}
         <span class="pub-title" style="font-weight:bold;">{{ post.title }}</span>
       </div>
