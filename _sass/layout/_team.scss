@@ -1,0 +1,122 @@
+/* ==========================================================================
+   TEAM PAGE
+   ========================================================================== */
+
+.team-page {
+  margin-bottom: 2em;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--global-text-color);
+    border-bottom: 2px solid var(--global-border-color);
+    padding-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: var(--global-text-color);
+    font-weight: bold;
+  }
+
+  .team-section {
+    margin-bottom: 2em;
+    
+    .archive__item {
+      margin-bottom: 1.5em;
+      padding: 1em;
+      border: 1px solid var(--global-border-color);
+      border-radius: 8px;
+      background-color: var(--global-bg-color);
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+    }
+
+    .archive__item-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: var(--global-text-color);
+    }
+
+    .archive__item-excerpt {
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: var(--global-text-color-light);
+    }
+
+    .archive__item-teaser {
+      float: left;
+      margin-right: 1em;
+      margin-bottom: 0.5em;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // Responsive design
+  @include breakpoint($medium) {
+    .team-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+    }
+  }
+
+  @include breakpoint($large) {
+    .team-section {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+}
+
+// Team member specific styling
+.team-member {
+  .member-info {
+    margin-left: 90px; // Account for the circular image
+  }
+
+  .member-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.25em;
+  }
+
+  .member-role {
+    color: var(--global-text-color-light);
+    font-style: italic;
+    margin-bottom: 0.5em;
+  }
+
+  .member-description {
+    margin-bottom: 0.5em;
+  }
+
+  .member-interests {
+    margin-top: 0.5em;
+    
+    strong {
+      color: var(--global-text-color);
+    }
+  }
+
+  .member-contact {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: var(--global-text-color-light);
+  }
+} 

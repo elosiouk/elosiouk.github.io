@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadOverflow Team - Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .team-page {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            color: #333;
+            font-weight: bold;
+        }
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5em;
+            margin-bottom: 2em;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1em;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .member-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .member-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 1em;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 12px;
+        }
+        .member-info h4 {
+            margin: 0 0 0.25em 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .member-role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5em;
+        }
+        .member-description {
+            margin-bottom: 0.5em;
+            line-height: 1.6;
+        }
+        .member-interests {
+            margin-top: 0.5em;
+        }
+        .member-interests strong {
+            color: #333;
+        }
+        .member-contact {
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="team-page">
+        <h2>People</h2>
+
+        <h3>Faculty</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">JS</div>
+                    <div class="member-info">
+                        <h4>Dr. Jane Smith</h4>
+                        <div class="member-role">Faculty</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Dr. Jane Smith is a Professor of Computer Science specializing in cybersecurity and software security. She leads the PadOverflow research team and has published over 50 papers in top-tier conferences and journals.
+                </div>
+                <div class="member-interests">
+                    <strong>Research Interests:</strong><br>
+                    - Software Security<br>
+                    - Program Analysis<br>
+                    - Vulnerability Detection<br>
+                    - Malware Analysis
+                </div>
+                <div class="member-contact">
+                    <strong>Contact:</strong><br>
+                    - Email: jane.smith@unipd.it<br>
+                    - Office: Room 301, Building A
+                </div>
+            </div>
+        </div>
+
+        <h3>PhD Students</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">MR</div>
+                    <div class="member-info">
+                        <h4>Marco Rossi</h4>
+                        <div class="member-role">PhD Student</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Marco Rossi is a PhD student working on automated vulnerability detection in web applications. His research focuses on developing static and dynamic analysis techniques to identify security flaws in modern web frameworks.
+                </div>
+                <div class="member-interests">
+                    <strong>Research Topic:</strong><br>
+                    - Automated Vulnerability Detection in Web Applications<br>
+                    - Static Analysis for Security<br>
+                    - Machine Learning for Security Analysis
+                </div>
+                <div class="member-contact">
+                    <strong>Supervisor:</strong> Dr. Jane Smith<br>
+                    <strong>Contact:</strong> marco.rossi@unipd.it
+                </div>
+            </div>
+        </div>
+
+        <h3>Post Doctoral Researchers</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">AB</div>
+                    <div class="member-info">
+                        <h4>Dr. Anna Bianchi</h4>
+                        <div class="member-role">Post Doctoral Researcher</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Dr. Anna Bianchi is a Post Doctoral Researcher working on binary analysis and reverse engineering. She specializes in developing tools for automated malware analysis and understanding.
+                </div>
+                <div class="member-interests">
+                    <strong>Research Interests:</strong><br>
+                    - Binary Analysis<br>
+                    - Reverse Engineering<br>
+                    - Malware Analysis<br>
+                    - Program Understanding
+                </div>
+                <div class="member-contact">
+                    <strong>Previous Experience:</strong><br>
+                    - PhD in Computer Science, University of Milan (2022)<br>
+                    - Research Assistant, Technical University of Munich (2020-2022)<br>
+                    <strong>Contact:</strong> anna.bianchi@unipd.it
+                </div>
+            </div>
+        </div>
+
+        <h3>Research Engineers</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">LV</div>
+                    <div class="member-info">
+                        <h4>Luca Verdi</h4>
+                        <div class="member-role">Research Engineer</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Luca Verdi is a Research Engineer working on developing practical security tools and frameworks. He focuses on translating research ideas into usable software tools for the security community.
+                </div>
+                <div class="member-interests">
+                    <strong>Areas of Expertise:</strong><br>
+                    - Software Development<br>
+                    - Security Tool Development<br>
+                    - System Administration<br>
+                    - DevOps
+                </div>
+                <div class="member-contact">
+                    <strong>Current Projects:</strong><br>
+                    - PadOverflow Security Framework<br>
+                    - Automated Testing Infrastructure<br>
+                    - Security Tool Integration<br>
+                    <strong>Contact:</strong> luca.verdi@unipd.it
+                </div>
+            </div>
+        </div>
+
+        <h3>Alumni</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">PN</div>
+                    <div class="member-info">
+                        <h4>Dr. Paolo Neri</h4>
+                        <div class="member-role">Alumni (PhD 2023)</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Dr. Paolo Neri completed his PhD in 2023 and is now working as a Security Researcher at Google. During his time at PadOverflow, he worked on automated vulnerability detection in IoT devices.
+                </div>
+                <div class="member-interests">
+                    <strong>PhD Thesis:</strong> "Automated Security Analysis of Internet of Things Devices"<br>
+                    <strong>Current Position:</strong> Security Researcher, Google<br>
+                    <strong>Research During PhD:</strong><br>
+                    - IoT Security<br>
+                    - Firmware Analysis<br>
+                    - Vulnerability Detection<br>
+                    - Hardware Security
+                </div>
+                <div class="member-contact">
+                    <strong>Contact:</strong> paolo.neri@gmail.com
+                </div>
+            </div>
+        </div>
+
+        <h3>Visitors</h3>
+        <div class="team-section">
+            <div class="team-member">
+                <div class="member-header">
+                    <div class="member-photo">MG</div>
+                    <div class="member-info">
+                        <h4>Prof. Maria Garcia</h4>
+                        <div class="member-role">Visiting Professor</div>
+                    </div>
+                </div>
+                <div class="member-description">
+                    Prof. Maria Garcia is a Visiting Professor from the Technical University of Berlin, spending 6 months at PadOverflow to collaborate on research in software security and program analysis.
+                </div>
+                <div class="member-interests">
+                    <strong>Home Institution:</strong> Technical University of Berlin<br>
+                    <strong>Research Collaboration:</strong><br>
+                    - Software Security Analysis<br>
+                    - Program Verification<br>
+                    - Formal Methods in Security
+                </div>
+                <div class="member-contact">
+                    <strong>Visit Period:</strong> September 2023 - February 2024<br>
+                    <strong>Contact:</strong> maria.garcia@tu-berlin.de
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
