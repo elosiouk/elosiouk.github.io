@@ -1,0 +1,66 @@
+---
+layout: archive
+title: "PadOverflow Team"
+permalink: /team/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="team-page">
+  <h2>People</h2>
+
+  <h3>Faculty</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "faculty" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>PhD Students</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "phd" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Post Doctoral Researchers</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "postdoc" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Research Engineers</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "engineer" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Alumni</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "alumni" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Visitors</h3>
+  <div class="team-section">
+    {% for post in site.team reversed %}
+      {% if post.category == "visitor" %}
+        {% include archive-single.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div> 
