@@ -21,7 +21,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "faculty" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
@@ -38,7 +48,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "phd" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
@@ -55,7 +75,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "postdoc" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
@@ -72,7 +102,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "engineer" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
@@ -89,7 +129,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "alumni" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
@@ -106,7 +156,17 @@ author_profile: true
     <div class="team-section">
       {% for post in site.team reversed %}
         {% if post.category == "visitor" %}
-          {% include archive-single.html %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+            <div class="member-role">{{ post.type }}</div>
+          </div>
         {% endif %}
       {% endfor %}
     </div>

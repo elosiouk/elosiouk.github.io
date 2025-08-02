@@ -84,39 +84,62 @@
   }
 }
 
-// Team member specific styling
-.team-member {
-  .member-info {
-    margin-left: 90px; // Account for the circular image
+// Team member card styling
+.team-member-card {
+  text-align: center;
+  padding: 1.5em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  background-color: var(--global-bg-color);
+  transition: all 0.3s ease;
+  margin-bottom: 1.5em;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+
+  .member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1em;
+    overflow: hidden;
+    border: 3px solid var(--global-border-color);
+    background-color: var(--global-bg-color);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .member-initials {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: var(--global-text-color-light);
+      background-color: var(--global-border-color);
+      text-transform: uppercase;
+    }
   }
 
   .member-name {
     font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 0.25em;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: var(--global-text-color);
+    line-height: 1.3;
   }
 
   .member-role {
     color: var(--global-text-color-light);
     font-style: italic;
-    margin-bottom: 0.5em;
-  }
-
-  .member-description {
-    margin-bottom: 0.5em;
-  }
-
-  .member-interests {
-    margin-top: 0.5em;
-    
-    strong {
-      color: var(--global-text-color);
-    }
-  }
-
-  .member-contact {
-    margin-top: 0.5em;
     font-size: 0.9em;
-    color: var(--global-text-color-light);
+    margin-bottom: 0;
   }
 } 
