@@ -10,57 +10,105 @@ author_profile: true
 <div class="team-page">
   <h2>People</h2>
 
-  <h3>Faculty</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "faculty" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign faculty_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "faculty" %}
+      {% assign faculty_count = faculty_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if faculty_count > 0 %}
+    <h3>Faculty</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "faculty" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-  <h3>PhD Students</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "phd" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign phd_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "phd" %}
+      {% assign phd_count = phd_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if phd_count > 0 %}
+    <h3>PhD Students</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "phd" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-  <h3>Post Doctoral Researchers</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "postdoc" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign postdoc_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "postdoc" %}
+      {% assign postdoc_count = postdoc_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if postdoc_count > 0 %}
+    <h3>Post Doctoral Researchers</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "postdoc" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-  <h3>Research Engineers</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "engineer" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign engineer_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "engineer" %}
+      {% assign engineer_count = engineer_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if engineer_count > 0 %}
+    <h3>Research Engineers</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "engineer" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-  <h3>Alumni</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "alumni" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign alumni_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "alumni" %}
+      {% assign alumni_count = alumni_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if alumni_count > 0 %}
+    <h3>Alumni</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "alumni" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-  <h3>Visitors</h3>
-  <div class="team-section">
-    {% for post in site.team reversed %}
-      {% if post.category == "visitor" %}
-        {% include archive-single.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% assign visitor_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "visitor" %}
+      {% assign visitor_count = visitor_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if visitor_count > 0 %}
+    <h3>Visitors</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "visitor" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 </div> 
