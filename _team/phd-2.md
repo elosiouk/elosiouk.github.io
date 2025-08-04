@@ -1,13 +1,13 @@
 ---
-title: "Samuele Doria"
+title: "Nicholas Miazzo"
 collection: team
 category: phd
 type: "PhD Student"
-permalink: /team/phd-1
-venue: "PadOverflow Research Team"
+permalink: /team/phd-2
+venue: "The PadOverflow Research Team"
 date: 2022-09-01
 location: "Padua, Italy"
-image: "samuele.png"
+image: "nicholas.jpeg"
 ---
 
 Marco Rossi is a PhD student working on automated vulnerability detection in web applications. His research focuses on developing static and dynamic analysis techniques to identify security flaws in modern web frameworks.
