@@ -14,6 +14,14 @@ main:
     url: /publications/
   - title: "Teaching"
     url: /teaching/
+  - title: "Students"
+    url: /students/
+  - title: "Community Service"
+    url: /community-service/
   - title: "Education"
     url: /education/
+  - title: "Achievements"
+    url: /achievements/
+  - title: "About Me"
+    url: /about/
  
