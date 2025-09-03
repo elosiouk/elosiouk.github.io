@@ -4,7 +4,7 @@ collection: team
 category: phd
 type: "PhD Student"
 permalink: /team/phd-2
-venue: "The PadOverflow Research Team"
+venue: "The PadOverflow Research Group"
 date: 2022-09-01
 location: "Padua, Italy"
 image: "nicholas.jpeg"
