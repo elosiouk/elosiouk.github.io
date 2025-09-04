@@ -7,6 +7,146 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.education reversed %}
-  {% include archive-single.html %}
-{% endfor %} 
+<style>
+.education-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.education-section {
+  margin-bottom: 40px;
+}
+
+.education-section h3 {
+  color: #2E86AB;
+  border-bottom: 2px solid #2E86AB;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.education-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-left: 4px solid #2E86AB;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.education-degree {
+  font-weight: bold;
+  color: #2E86AB;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.education-institution {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.education-details {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.education-date {
+  color: #888;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.visiting-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-left: 4px solid #6A994E;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.visiting-title {
+  font-weight: bold;
+  color: #6A994E;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.visiting-institution {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.visiting-details {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.visiting-date {
+  color: #888;
+  font-size: 0.9em;
+  font-style: italic;
+}
+</style>
+
+<div class="education-page">
+  
+  <div class="education-section">
+    <h3>Academic Degrees</h3>
+    
+    <div class="education-item">
+      <div class="education-degree">PhD in Bioengineering</div>
+      <div class="education-institution">University of Pavia</div>
+      <div class="education-details">Dep. of Electrical, Computer and Biomedical Engineering</div>
+      <div class="education-date">2018</div>
+    </div>
+    
+    <div class="education-item">
+      <div class="education-degree">Master Degree in Bioengineering</div>
+      <div class="education-institution">University of Pavia</div>
+      <div class="education-details">Dep. of Electrical, Computer and Biomedical Engineering</div>
+      <div class="education-date">2014</div>
+    </div>
+    
+    <div class="education-item">
+      <div class="education-degree">Bachelor Degree in Bioengineering</div>
+      <div class="education-institution">University of Pavia</div>
+      <div class="education-details">Dep. of Electrical, Computer and Biomedical Engineering</div>
+      <div class="education-date">2012</div>
+    </div>
+  </div>
+  
+  <div class="education-section">
+    <h3>Visiting Positions</h3>
+    
+    <div class="visiting-item">
+      <div class="visiting-title">Visiting Researcher</div>
+      <div class="visiting-institution">Max Planck Institute for Security and Privacy</div>
+      <div class="visiting-details">MPI Software Security group, Bochum, Germany</div>
+      <div class="visiting-details">Under the supervision of Prof. Marcel Böhme</div>
+      <div class="visiting-date">March 2024 - June 2024</div>
+    </div>
+    
+    <div class="visiting-item">
+      <div class="visiting-title">Fulbright Scholar</div>
+      <div class="visiting-institution">International Computer Science Institute (ICSI)</div>
+      <div class="visiting-details">BLUES GROUP, Berkeley, USA</div>
+      <div class="visiting-details">Under the supervision of Prof. Serge Egelman</div>
+      <div class="visiting-date">Sep 2021 - March 2022</div>
+    </div>
+    
+    <div class="visiting-item">
+      <div class="visiting-title">Visiting PhD Student</div>
+      <div class="visiting-institution">École polytechnique fédérale de Lausanne (EPFL)</div>
+      <div class="visiting-details">Lausanne, Switzerland</div>
+      <div class="visiting-details">Under the supervision of Prof. Jean-Pierre Hubaux</div>
+      <div class="visiting-date">Feb 2017 - June 2017</div>
+    </div>
+  </div>
+  
+</div> 
