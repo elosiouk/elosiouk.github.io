@@ -6,5 +6,6 @@ type: "hacking conference"
 year: 2025
 location: "Las Vegas, USA"
 date: "7-10 August, 2025"
+github: "https://github.com/elosiouk/virtualpatch_evaluation"
 ---
 
