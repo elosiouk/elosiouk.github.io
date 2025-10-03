@@ -7,8 +7,6 @@ author_profile: true
 
 ## Mobile Security (2025-2026)
 
-### Course Information
-
 **Language:** The course and the exam will be in English.
 
 **Credits:** 6 CFU.
@@ -53,3 +51,19 @@ The final exam will be a set of multiple choice questions covering all the topic
 - 15 points achievable through practical questions
 
 The bonus cumulated through the presentation during the course is summed to the grade obtained at the exam. Since the participation is not mandatory, a student can get the maximum grade (i.e., 30L) even without attending the course.
+
+### Special Project Option for This Year
+
+Over the past few years, I have been working with my group on the virtualization technique and we have been using it for designing new attacks and new defence. Among the different projects, we have developed a solution, called VirtualPatch, to address the delay in distributing security patches for the Android OS. 
+
+The purpose of the project is to port the current VirtualPatch version, developed on top of VirtualApp on Android 9, to VirtualXposed on Android 13. 
+
+Since the project requires deep knowledge of the Android internals that will not be introduced during the course, I suggest to work on it in a small group (3/4 students). 
+
+Students choosing this option will have to present their design and implementation and to have an oral exam over the whole course contents. 
+
+Readings: 
+- S. Pizzi, S. Doria, N. Miazzo, E. Losiouk, "VirtualPatch: Distributing Android Security Patches Through Android Virtualization", Computers & Security [<a href="https://www.sciencedirect.com/science/article/pii/S0167404825003049?ref=pdf_download&fr=RR-2&rr=988a0a3369d80e6d">PDF</a>]
+- <a href="https://github.com/elosiouk/virtualpatch_evaluation">VirtualPatch GitHub project</a>
+- <a href="https://thesis.unipd.it/retrieve/abbd04af-acc0-4823-9711-296e0e1510e2/BoscoloMeneguolo_Luca.pdf">Towards Secure Virtual Apps: Bringing Application-Level Isolation to Android Virtualization</a>
+- <a href="https://thesis.unipd.it/retrieve/dc44b017-c3be-4e33-a220-889adfb355be/Lazari_Alberto.pdf">Towards Secure Virtual Apps: Bringing Android Permission Model to Application Virtualization</a>
