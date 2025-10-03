@@ -64,6 +64,6 @@ Students choosing this option will have to present their design and implementati
 
 Readings: 
 - S. Pizzi, S. Doria, N. Miazzo, E. Losiouk, "VirtualPatch: Distributing Android Security Patches Through Android Virtualization", Computers & Security [<a href="https://www.sciencedirect.com/science/article/pii/S0167404825003049?ref=pdf_download&fr=RR-2&rr=988a0a3369d80e6d">PDF</a>]
-- <a href="https://github.com/elosiouk/virtualpatch_evaluation">VirtualPatch GitHub project</a>
+- <a href="https://github.com/samudoria/virtualpatch_data">VirtualPatch GitHub project</a>
 - <a href="https://thesis.unipd.it/retrieve/abbd04af-acc0-4823-9711-296e0e1510e2/BoscoloMeneguolo_Luca.pdf">Towards Secure Virtual Apps: Bringing Application-Level Isolation to Android Virtualization</a>
 - <a href="https://thesis.unipd.it/retrieve/dc44b017-c3be-4e33-a220-889adfb355be/Lazari_Alberto.pdf">Towards Secure Virtual Apps: Bringing Android Permission Model to Application Virtualization</a>
