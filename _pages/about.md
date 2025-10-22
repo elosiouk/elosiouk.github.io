@@ -10,6 +10,9 @@ redirect_from:
 
 ## Latest News
 
+**16 October 2025**  
+I received an honourable mention from my research activties under the Young Researchers Award 2025!
+
 **28 July 2025**  
 The **MOOC "Cybersecurity for Citizens and Professionals"**, which I have been responsible for, is finally online! You can chek it out here: https://www.futurelearn.com/courses/cybersecurity-for-citizens-and-professionals
 
