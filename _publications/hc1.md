@@ -6,6 +6,6 @@ type: "hacking conference"
 year: 2025
 location: "Las Vegas, USA"
 date: "2-7 August, 2025"
-paperurl: ""
+slides: "https://i.blackhat.com/BH-USA-25/Presentations/USA-25-Casagrande-ETrojans-Ransomware-Tracking-Dos-Leak-Battery.pdf"
 ---
 
