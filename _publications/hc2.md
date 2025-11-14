@@ -1,7 +1,7 @@
 ---
 title: "Matrioska: A User-Centric Defense Against Virtualization-Based Repackaging Malware on Android"
 authors: "S. Zerbini, S. Doria, P. Wijesekera, S. Egelman, E. Losiouk"
-venue: "DEFCON 2025"
+venue: "DEFCON 2025 (Mobile Hacking Community)"
 type: "hacking conference"
 year: 2025
 location: "Las Vegas, USA"
