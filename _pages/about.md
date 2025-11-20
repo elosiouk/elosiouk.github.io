@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Eleonora Losiouk"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,9 +8,7 @@ redirect_from:
 ---
 
 
-## About
-
-My career started in bioengineering, but one internship at EPFL got me hooked on Android security. So I packed my things, moved to Padua, and started shaping my own research direction, meanwhile building a research team (<a href="https://elosiouk.github.io/team/">PadOverflow</a>), excited about software security like me! We are into anything that breaks (or secures) software, with a soft focus for Android but not exclusively. If you want to know more about the PadOverflow's research interests, check <a href="https://elosiouk.github.io/research_interests/">this page out</a>. If you want to know more about me, you can listen to <a href="https://youtu.be/fyvp5qkWyHM">this interview</a>! 
+Hi! My name is Eleonora and I am currently an Associate Professor at the University of Padua. My career started in bioengineering, but one internship at EPFL got me hooked on Android security. So I packed my things, moved to Padua, and started shaping my own research direction, meanwhile building a research team (<a href="https://elosiouk.github.io/team/">PadOverflow</a>), excited about software security like me! We are into anything that breaks (or secures) software, with a soft focus for Android but not exclusively. If you want to know more about the PadOverflow's research interests, check <a href="https://elosiouk.github.io/research_interests/">this page out</a>. If you want to know more about me, you can listen to <a href="https://youtu.be/fyvp5qkWyHM">this interview</a>! 
 
 
 ## Latest News
