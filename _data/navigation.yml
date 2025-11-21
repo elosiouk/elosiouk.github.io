@@ -10,6 +10,8 @@
 main:
   - title: "Research Group"
     url: /team/
+  - title: "Research Interests"
+    url: /research_interests/
   - title: "Publications"
     url: /publications/
   - title: "Teaching"

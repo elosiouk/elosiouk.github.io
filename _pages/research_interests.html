@@ -1,0 +1,116 @@
+---
+layout: archive
+title: "Research Interests"
+permalink: /research_interests/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="research-areas-page">
+  <p class="research-intro">Below you can explore a curated view of my publications, organized by the research areas that drive my group. Publications are automatically assigned based on keywords in their titles and venues, while anything that cuts across multiple topics appears in the cross-cutting section.</p>
+
+  <style>
+    .research-areas-page { max-width: 1100px; margin: 0 auto; }
+    .research-intro { font-size: 1.05em; color: #333; margin-bottom: 1.5em; }
+    .research-area { margin-bottom: 2.5em; }
+    .research-area h2 { color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 6px; margin-bottom: 0.65em; }
+    .research-area p { color: #444; margin-bottom: 0.8em; }
+    .area-pubs { list-style: none; padding: 0; margin: 0; }
+    .area-pub-entry { margin-bottom: 1em; padding: 1em; border-left: 4px solid #2E86AB; border-radius: 4px; background: rgba(46,134,171,0.08); }
+    .area-pub-header { display: flex; gap: 10px; align-items: center; margin-bottom: 0.3em; font-size: 0.9em; }
+    .area-pub-year { font-weight: bold; color: #1F2937; }
+    .area-pub-type { text-transform: uppercase; letter-spacing: 0.05em; background: #1F2937; color: #fff; padding: 0.1em 0.5em; border-radius: 10px; font-size: 0.75em; }
+    .area-pub-title { font-weight: 600; font-size: 1.05em; color: #111827; margin-bottom: 0.2em; }
+    .area-pub-authors { color: #4B5563; font-size: 0.95em; margin-bottom: 0.15em; }
+    .area-pub-venue { color: #6B7280; font-style: italic; font-size: 0.9em; margin-bottom: 0.3em; }
+    .area-pub-links a { margin-right: 0.55em; font-size: 0.85em; color: #1D4ED8; }
+    .area-pub-links a:hover { text-decoration: underline; }
+    .area-empty { color: #6B7280; font-style: italic; }
+  </style>
+
+  {% assign all_pubs = site.publications | sort: 'year' | reverse %}
+  {% assign assigned = "|" %}
+
+  {% for area in site.data.research_areas %}
+    <section class="research-area" id="{{ area.name | slugify }}">
+      <h2>{{ area.name }}</h2>
+      {% if area.description %}<p>{{ area.description }}</p>{% endif %}
+      <ul class="area-pubs">
+        {% assign has_pub = false %}
+        {% if area.catch_all %}
+          {% for pub in all_pubs %}
+            {% assign slug = pub.slug | default: pub.id %}
+            {% assign slug_token = '|' | append: slug | append: '|' %}
+            {% unless assigned contains slug_token %}
+              {% assign has_pub = true %}
+              <li class="area-pub-entry">
+                <div class="area-pub-header">
+                  {% if pub.year %}<span class="area-pub-year">{{ pub.year }}</span>{% endif %}
+                  {% if pub.type %}<span class="area-pub-type">{{ pub.type | capitalize }}</span>{% endif %}
+                </div>
+                <div class="area-pub-title">{{ pub.title }}</div>
+                {% if pub.authors %}<div class="area-pub-authors">{{ pub.authors }}</div>{% endif %}
+                {% if pub.venue %}<div class="area-pub-venue">{{ pub.venue }}</div>{% endif %}
+                {% if pub.paperurl or pub.doi or pub.bibtex or pub.slides or pub.github %}
+                  <div class="area-pub-links">
+                    {% if pub.paperurl %}<a href="{{ pub.paperurl }}" target="_blank">[PDF]</a>{% endif %}
+                    {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank">[DOI]</a>{% endif %}
+                    {% if pub.bibtex %}<a href="{{ pub.bibtex }}" target="_blank">[BibTeX]</a>{% endif %}
+                    {% if pub.slides %}<a href="{{ pub.slides }}" target="_blank">[Slide]</a>{% endif %}
+                    {% if pub.github %}<a href="{{ pub.github }}" target="_blank">[GitHub]</a>{% endif %}
+                  </div>
+                {% endif %}
+              </li>
+              {% assign assigned = assigned | append: slug | append: '|' %}
+            {% endunless %}
+          {% endfor %}
+        {% else %}
+          {% for pub in all_pubs %}
+            {% assign slug = pub.slug | default: pub.id %}
+            {% assign slug_token = '|' | append: slug | append: '|' %}
+            {% unless assigned contains slug_token %}
+              {% assign title_lower = pub.title | downcase %}
+              {% assign venue_lower = pub.venue | default: '' | downcase %}
+              {% assign matched = false %}
+              {% if area.keywords %}
+                {% for keyword in area.keywords %}
+                  {% assign keyword_lower = keyword | downcase %}
+                  {% if title_lower contains keyword_lower or venue_lower contains keyword_lower %}
+                    {% assign matched = true %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if matched %}
+                {% assign has_pub = true %}
+                <li class="area-pub-entry">
+                  <div class="area-pub-header">
+                    {% if pub.year %}<span class="area-pub-year">{{ pub.year }}</span>{% endif %}
+                    {% if pub.type %}<span class="area-pub-type">{{ pub.type | capitalize }}</span>{% endif %}
+                  </div>
+                  <div class="area-pub-title">{{ pub.title }}</div>
+                  {% if pub.authors %}<div class="area-pub-authors">{{ pub.authors }}</div>{% endif %}
+                  {% if pub.venue %}<div class="area-pub-venue">{{ pub.venue }}</div>{% endif %}
+                  {% if pub.paperurl or pub.doi or pub.bibtex or pub.slides or pub.github %}
+                    <div class="area-pub-links">
+                      {% if pub.paperurl %}<a href="{{ pub.paperurl }}" target="_blank">[PDF]</a>{% endif %}
+                      {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank">[DOI]</a>{% endif %}
+                      {% if pub.bibtex %}<a href="{{ pub.bibtex }}" target="_blank">[BibTeX]</a>{% endif %}
+                      {% if pub.slides %}<a href="{{ pub.slides }}" target="_blank">[Slide]</a>{% endif %}
+                      {% if pub.github %}<a href="{{ pub.github }}" target="_blank">[GitHub]</a>{% endif %}
+                    </div>
+                  {% endif %}
+                </li>
+                {% assign assigned = assigned | append: slug | append: '|' %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
+
+        {% unless has_pub %}
+          <li class="area-empty">No publications currently classified in this area. Check back soon!</li>
+        {% endunless %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
