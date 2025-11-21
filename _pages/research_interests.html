@@ -9,24 +9,27 @@ author_profile: true
 
 <div class="research-areas-page">
   <p class="research-intro">Below you can explore a curated view of my publications, organized by the research areas that drive my group. Publications are automatically assigned based on keywords in their titles and venues, while anything that cuts across multiple topics appears in the cross-cutting section.</p>
+  <p class="research-blurb">Security of smartphones, Android OS internals, mobile malware, and app analysis.</p>
+  <p class="research-blurb">Techniques for software hardening, vulnerability discovery, program analysis, and defensive tooling.</p>
 
   <style>
-    .research-areas-page { max-width: 1100px; margin: 0 auto; }
-    .research-intro { font-size: 1.05em; color: #333; margin-bottom: 1.5em; }
-    .research-area { margin-bottom: 2.5em; }
-    .research-area h2 { color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 6px; margin-bottom: 0.65em; }
-    .research-area p { color: #444; margin-bottom: 0.8em; }
-    .area-pubs { list-style: none; padding: 0; margin: 0; }
-    .area-pub-entry { margin-bottom: 1em; padding: 1em; border-left: 4px solid #2E86AB; border-radius: 4px; background: rgba(46,134,171,0.08); }
-    .area-pub-header { display: flex; gap: 10px; align-items: center; margin-bottom: 0.3em; font-size: 0.9em; }
-    .area-pub-year { font-weight: bold; color: #1F2937; }
-    .area-pub-type { text-transform: uppercase; letter-spacing: 0.05em; background: #1F2937; color: #fff; padding: 0.1em 0.5em; border-radius: 10px; font-size: 0.75em; }
-    .area-pub-title { font-weight: 600; font-size: 1.05em; color: #111827; margin-bottom: 0.2em; }
-    .area-pub-authors { color: #4B5563; font-size: 0.95em; margin-bottom: 0.15em; }
-    .area-pub-venue { color: #6B7280; font-style: italic; font-size: 0.9em; margin-bottom: 0.3em; }
-    .area-pub-links a { margin-right: 0.55em; font-size: 0.85em; color: #1D4ED8; }
-    .area-pub-links a:hover { text-decoration: underline; }
-    .area-empty { color: #6B7280; font-style: italic; }
+  .research-areas-page { max-width: 1100px; margin: 0 auto; }
+  .research-intro { font-size: 1.05em; color: #111827; margin-bottom: 1.5em; }
+  .research-blurb { font-size: 1em; color: #1F2937; margin-bottom: 1.2em; }
+  .research-area { margin-bottom: 2.5em; }
+  .research-area h2 { color: #0F766E; border-bottom: 2px solid #0F766E; padding-bottom: 6px; margin-bottom: 0.65em; }
+  .research-area p { color: #1F2937; margin-bottom: 0.8em; }
+  .area-pubs { list-style: none; padding: 0; margin: 0; }
+  .area-pub-entry { margin-bottom: 1em; padding: 1em; border-left: 4px solid #38BDF8; border-radius: 4px; background: #1F2937; }
+  .area-pub-header { display: flex; gap: 10px; align-items: center; margin-bottom: 0.3em; font-size: 0.9em; color: #E0F2FE; }
+  .area-pub-year { font-weight: bold; color: #E0F2FE; }
+  .area-pub-type { text-transform: uppercase; letter-spacing: 0.05em; background: #38BDF8; color: #0B1120; padding: 0.1em 0.5em; border-radius: 10px; font-size: 0.75em; }
+  .area-pub-title { font-weight: 600; font-size: 1.05em; color: #FFFFFF; margin-bottom: 0.2em; }
+  .area-pub-authors { color: #D1D5DB; font-size: 0.95em; margin-bottom: 0.15em; }
+  .area-pub-venue { color: #94A3B8; font-style: italic; font-size: 0.9em; margin-bottom: 0.3em; }
+  .area-pub-links a { margin-right: 0.55em; font-size: 0.85em; color: #38BDF8; }
+  .area-pub-links a:hover { text-decoration: underline; color: #BAE6FD; }
+  .area-empty { color: #64748B; font-style: italic; }
   </style>
 
   {% assign all_pubs = site.publications | sort: 'year' | reverse %}
