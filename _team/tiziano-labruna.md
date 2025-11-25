@@ -1,3 +1,4 @@
+---
 title: "Tiziano Labruna"
 collection: team
 category: "postdoc"
