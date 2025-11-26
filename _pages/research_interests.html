@@ -10,39 +10,53 @@ author_profile: true
 <div class="research-areas-page">
 
   <style>
+    :root {
+      --area-accent: var(--global-link-color, #4a9eff);
+      --area-card-bg: rgba(74, 158, 255, 0.12);
+      --area-card-border: var(--area-accent);
+      --area-thesis-bg: rgba(148, 163, 184, 0.12);
+      --area-thesis-border: rgba(148, 163, 184, 0.4);
+    }
+
+    html[data-theme="dark"] {
+      --area-card-bg: rgba(74, 158, 255, 0.18);
+      --area-thesis-bg: rgba(148, 163, 184, 0.18);
+      --area-thesis-border: rgba(148, 163, 184, 0.45);
+    }
+
     .research-areas-page { max-width: 1100px; margin: 0 auto; }
-    .research-intro { font-size: 1.05em; color: #111827; margin-bottom: 1.5em; }
+    .research-intro { font-size: 1.05em; color: var(--global-text-color, #111827); margin-bottom: 1.5em; }
     .research-area { margin-bottom: 3em; }
-    .research-area h2 { color: #2E86AB; border-bottom: 2px solid #2E86AB; padding-bottom: 6px; margin-bottom: 0.75em; }
-    .research-blurb { font-size: 1em; color: #1F2937; margin-bottom: 1.2em; }
-    .area-subheading { font-size: 0.95em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #4B5563; margin: 1.2em 0 0.6em; }
+    .research-area h2 { color: var(--area-accent); border-bottom: 2px solid var(--area-accent); padding-bottom: 6px; margin-bottom: 0.75em; }
+    .research-blurb { font-size: 1em; color: var(--global-text-color, #1f2937); margin-bottom: 1.2em; }
+    .area-subheading { font-size: 0.95em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--global-text-color-light, #4b5563); margin: 1.2em 0 0.6em; }
     .area-pubs, .area-theses { list-style: none; padding: 0; margin: 0; }
-    .area-pub-entry { margin-bottom: 1em; padding: 1em; border-left: 4px solid #2E86AB; border-radius: 6px; background: rgba(46,134,171,0.08); }
-    .area-pub-header { display: flex; gap: 10px; align-items: center; margin-bottom: 0.3em; font-size: 0.9em; color: #1F2937; }
+    .area-pub-entry { margin-bottom: 1em; padding: 1em; border-left: 4px solid var(--area-card-border); border-radius: 6px; background: var(--area-card-bg); }
+    .area-pub-header { display: flex; gap: 10px; align-items: center; margin-bottom: 0.3em; font-size: 0.9em; color: var(--global-text-color-light, #1f2937); }
     .area-pub-year { font-weight: 600; }
-    .area-pub-type { text-transform: uppercase; letter-spacing: 0.05em; background: #2E86AB; color: #fff; padding: 0.1em 0.55em; border-radius: 999px; font-size: 0.75em; }
-    .area-pub-title { font-weight: 600; font-size: 1.05em; color: #0F172A; margin-bottom: 0.2em; }
-    .area-pub-authors { color: #374151; font-size: 0.95em; margin-bottom: 0.15em; }
-    .area-pub-venue { color: #4B5563; font-style: italic; font-size: 0.9em; margin-bottom: 0.3em; }
-    .area-pub-links a { margin-right: 0.55em; font-size: 0.85em; color: #1D4ED8; }
+    .area-pub-type { text-transform: uppercase; letter-spacing: 0.05em; background: var(--area-accent); color: #0f172a; padding: 0.1em 0.55em; border-radius: 999px; font-size: 0.75em; }
+    html[data-theme="dark"] .area-pub-type { color: #f8fafc; }
+    .area-pub-title { font-weight: 600; font-size: 1.05em; color: var(--global-text-color, #0f172a); margin-bottom: 0.2em; }
+    .area-pub-authors { color: var(--global-text-color-light, #374151); font-size: 0.95em; margin-bottom: 0.15em; }
+    .area-pub-venue { color: var(--global-text-color-light, #4b5563); font-style: italic; font-size: 0.9em; margin-bottom: 0.3em; }
+    .area-pub-links a { margin-right: 0.55em; font-size: 0.85em; color: var(--area-accent); }
     .area-pub-links a:hover { text-decoration: underline; }
-    .area-thesis-entry { margin-bottom: 0.9em; padding: 0.9em 1em; border-left: 4px solid #6B7280; border-radius: 6px; background: rgba(107,114,128,0.08); }
-    .thesis-title { font-weight: 600; color: #111827; margin-bottom: 0.25em; }
-    .thesis-meta { font-size: 0.9em; color: #4B5563; margin-bottom: 0.35em; display: flex; gap: 0.75em; flex-wrap: wrap; }
-    .thesis-links a { color: #1D4ED8; font-size: 0.85em; }
+    .area-thesis-entry { margin-bottom: 0.9em; padding: 0.9em 1em; border-left: 4px solid var(--area-thesis-border); border-radius: 6px; background: var(--area-thesis-bg); }
+    .thesis-title { font-weight: 600; color: var(--global-text-color, #111827); margin-bottom: 0.25em; }
+    .thesis-meta { font-size: 0.9em; color: var(--global-text-color-light, #4b5563); margin-bottom: 0.35em; display: flex; gap: 0.75em; flex-wrap: wrap; }
+    .thesis-links a { color: var(--area-accent); font-size: 0.85em; }
     .thesis-links a:hover { text-decoration: underline; }
-    .thesis-notes { font-size: 0.85em; color: #6B7280; margin-top: 0.3em; }
-    .area-empty { color: #6B7280; font-style: italic; margin-top: 1em; }
+    .thesis-notes { font-size: 0.85em; color: var(--global-text-color-light, #6b7280); margin-top: 0.3em; }
+    .area-empty { color: var(--global-text-color-light, #6b7280); font-style: italic; margin-top: 1em; }
   </style>
 
   <p class="research-intro">I organise my research around a handful of focus areas. Each section collects the publications and theses that best capture the questions my group explores.</p>
 
   <!-- Mobile & Android Security -->
   <section class="research-area" id="mobile-android-security">
-    <h2>Mobile &amp; Android Security</h2>
-    <p class="research-blurb">Hardening the Android ecosystem, virtualising apps, and analysing mobile threats across firmware, OS, and applications.</p>
+    <h2>Android Security</h2>
 
-    <h3 class="area-subheading">Featured Publications</h3>
+    <h3 class="area-subheading">Publications</h3>
     <ul class="area-pubs">
       <li class="area-pub-entry">
         <div class="area-pub-header">
@@ -85,7 +99,7 @@ author_profile: true
       </li>
     </ul>
 
-    <h3 class="area-subheading">Selected Theses</h3>
+    <h3 class="area-subheading">Theses</h3>
     <ul class="area-theses">
       <li class="area-thesis-entry">
         <div class="thesis-title">"Towards Secure Virtual Apps: Bringing Application-Level Isolation to Android Virtualization"</div>
@@ -110,9 +124,7 @@ author_profile: true
   <!-- Automated Vulnerability Analysis & AI -->
   <section class="research-area" id="automated-analysis-ai">
     <h2>Automated Vulnerability Analysis &amp; AI</h2>
-    <p class="research-blurb">Automation, program analysis, and AI-assisted tooling for vulnerability discovery and remediation.</p>
-
-    <h3 class="area-subheading">Featured Publications</h3>
+    <h3 class="area-subheading">Publications</h3>
     <ul class="area-pubs">
       <li class="area-pub-entry">
         <div class="area-pub-header">
@@ -141,7 +153,7 @@ author_profile: true
       </li>
     </ul>
 
-    <h3 class="area-subheading">Selected Theses</h3>
+    <h3 class="area-subheading">Theses</h3>
     <ul class="area-theses">
       <li class="area-thesis-entry">
         <div class="thesis-title">"Leveraging Graph of Thoughts and Large Language Models for Advanced Vulnerability Detection"</div>
@@ -164,9 +176,7 @@ author_profile: true
   <!-- Cyber-Physical & IoT Security -->
   <section class="research-area" id="cyber-physical-iot">
     <h2>Cyber-Physical &amp; IoT Security</h2>
-    <p class="research-blurb">Protecting connected devices, smart mobility platforms, and cyber-physical infrastructures against practical attacks.</p>
-
-    <h3 class="area-subheading">Featured Publications</h3>
+    <h3 class="area-subheading">Publications</h3>
     <ul class="area-pubs">
       <li class="area-pub-entry">
         <div class="area-pub-header">
@@ -195,7 +205,7 @@ author_profile: true
       </li>
     </ul>
 
-    <h3 class="area-subheading">Selected Theses</h3>
+    <h3 class="area-subheading">Theses</h3>
     <ul class="area-theses">
       <li class="area-thesis-entry">
         <div class="thesis-title">"Reversing, Analyzing, and Attacking Xiaomi's Electric Scooter Ecosystem"</div>
@@ -217,10 +227,8 @@ author_profile: true
 
   <!-- Healthcare & Bioengineering -->
   <section class="research-area" id="healthcare-bioengineering">
-    <h2>Healthcare &amp; Bioengineering</h2>
-    <p class="research-blurb">Applying security, privacy, and software techniques to digital health, medical devices, and assistive technologies.</p>
-
-    <h3 class="area-subheading">Featured Publications</h3>
+    <h2>Bioengineering</h2>
+    <h3 class="area-subheading">Publications</h3>
     <ul class="area-pubs">
       <li class="area-pub-entry">
         <div class="area-pub-header">
@@ -245,7 +253,7 @@ author_profile: true
       </li>
     </ul>
 
-    <h3 class="area-subheading">Selected Theses</h3>
+    <h3 class="area-subheading">Theses</h3>
     <ul class="area-theses">
       <li class="area-thesis-entry">
         <div class="thesis-title">"LLMs Evaluation for Android Vulnerability Repair"</div>
