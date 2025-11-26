@@ -1,60 +1,72 @@
-- name: "Mobile & Android Security"
-  description: "Security of smartphones, Android OS internals, mobile malware, and app analysis."
-  keywords:
-    - "android"
-    - "mobile"
-    - "smartphone"
-    - "apk"
-    - "play store"
-    - "application"
-    - "virtualization"
-    - "mobile security"
-- name: "Software & Program Analysis"
-  description: "Techniques for software hardening, vulnerability discovery, program analysis, and defensive tooling."
-  keywords:
-    - "program"
-    - "software"
-    - "analysis"
-    - "reverse"
-    - "vulnerability"
-    - "binary"
-    - "fuzz"
-    - "static"
-    - "dynamic"
-- name: "Cyber-Physical Systems & IoT"
-  description: "Security of embedded devices, IoT platforms, autonomous systems, and cyber-physical infrastructures."
-  keywords:
-    - "iot"
-    - "embedded"
-    - "cyber-physical"
-    - "control"
-    - "automation"
-    - "industrial"
-    - "sensor"
-    - "cloud"
-    - "smart"
-- name: "Privacy, Trust & Human Factors"
-  description: "Privacy, user studies, ethics, societal impact, and trustworthy systems."
-  keywords:
-    - "privacy"
-    - "trust"
-    - "ethical"
-    - "user"
-    - "survey"
-    - "gdpr"
-    - "behavior"
-    - "awareness"
-- name: "Healthcare & Bioengineering"
-  description: "Digital health, medical devices, assistive technologies, and biomedical informatics."
-  keywords:
-    - "medical"
-    - "health"
-    - "diabetes"
-    - "insulin"
-    - "clinic"
-    - "therapy"
-    - "biomedical"
-    - "patient"
-- name: "Cross-cutting & Collaborations"
-  description: "Publications that span multiple domains or do not yet have a designated research area."
-  catch_all: true
+- id: mobile-android-security
+  name: "Mobile & Android Security"
+  description: "Hardening the Android ecosystem, virtualizing apps, and analyzing mobile threats across firmware, OS, and applications."
+  publications:
+    - c28
+    - j16
+    - c27
+  theses:
+    - student: "Luca Boscolo Meneguolo"
+      title: "Towards Secure Virtual Apps: Bringing Application-Level Isolation to Android Virtualization"
+      year: 2025
+      link: "https://thesis.unipd.it/retrieve/abbd04af-acc0-4823-9711-296e0e1510e2/BoscoloMeneguolo_Luca.pdf"
+    - student: "Alberto Lazari"
+      title: "Towards Secure Virtual Apps: Bringing Android Permission Model to Application Virtualization"
+      year: 2025
+      link: "https://thesis.unipd.it/retrieve/dc44b017-c3be-4e33-a220-889adfb355be/Lazari_Alberto.pdf"
+    - student: "Simeone Pizzi"
+      title: "VirtualPatch: Fixing Android Security Vulnerabilities with App-Level Virtualization"
+      year: 2022
+      link: "https://thesis.unipd.it/bitstream/20.500.12608/32823/1/Pizzi_Simeone.pdf"
+
+- id: automated-analysis-ai
+  name: "Automated Vulnerability Analysis & AI"
+  description: "Automation, program analysis, and AI-assisted tooling for vulnerability discovery and remediation."
+  publications:
+    - c24
+    - c22
+  theses:
+    - student: "Nicholas Miazzo"
+      title: "Leveraging Graph of Thoughts and Large Language Models for Advanced Vulnerability Detection"
+      year: 2024
+      link: "https://thesis.unipd.it/handle/20.500.12608/70914"
+    - student: "Matteo Todescato"
+      title: "Automatic Vulnerability Testing in Android Applications"
+      year: 2024
+      link: "https://thesis.unipd.it/handle/20.500.12608/70925"
+    - student: "Saad Ahmed"
+      title: "Valutazione di Strumenti Basati su LLM per il Fixing Automatico di Vulnerabilità di Sicurezza in Applicazioni Android"
+      year: 2024
+      link: "https://thesis.unipd.it/handle/20.500.12608/64049"
+
+- id: cyber-physical-iot
+  name: "Cyber-Physical & IoT Security"
+  description: "Protecting connected devices, smart mobility platforms, and cyber-physical infrastructures against practical attacks."
+  publications:
+    - c21
+    - c20
+  theses:
+    - student: "Riccardo Cestaro"
+      title: "Reversing, Analyzing, and Attacking Xiaomi's Electric Scooter Ecosystem"
+      year: 2022
+      link: "https://thesis.unipd.it/handle/20.500.12608/31775"
+    - student: "Andrea Varischio"
+      title: "A Virtualization-Based Solution for Protecting Android Bluetooth Low-Energy Communications"
+      year: 2022
+      link: "https://thesis.unipd.it/handle/20.500.12608/29237"
+    - student: "Alberto Molon"
+      title: "Automated Analysis and Exploitation of Vulnerable Android Applications"
+      year: 2022
+      link: "https://thesis.unipd.it/handle/20.500.12608/10065"
+
+- id: healthcare-bioengineering
+  name: "Healthcare & Bioengineering"
+  description: "Applying security, privacy, and software techniques to digital health, medical devices, and assistive technologies."
+  publications:
+    - j01
+    - b01
+  theses:
+    - student: "Elisa Braconaro"
+      title: "LLMs Evaluation for Android Vulnerability Repair"
+      year: 2023
+      link: "https://thesis.unipd.it/retrieve/56187322-2a56-4404-8537-626a447eb9ea/Braconaro_Elisa.pdf"
