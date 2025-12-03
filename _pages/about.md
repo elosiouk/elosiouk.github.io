@@ -13,11 +13,14 @@ Hi! My name is Eleonora and I am currently an Associate Professor at the Univers
 
 ## Latest News
 
+**24 November 2025**  
+Our paper "Decompiling the Synergy: An Empirical Study of Human–LLM Teaming in Software Reverse Engineering" has been accepted at **NDSS 2026**!
+
 **16 October 2025**  
 I received an honourable mention for my research activties under the Young Researchers Award 2025!
 
 **28 July 2025**  
-The **MOOC "Cybersecurity for Citizens and Professionals"**, which I have been responsible for, is finally online! You can chek it out here: https://www.futurelearn.com/courses/cybersecurity-for-citizens-and-professionals
+The **MOOC "Cybersecurity for Citizens and Professionals"**, which I have been responsible for, is finally online! You can chek it out here: <a href="https://www.futurelearn.com/courses/cybersecurity-for-citizens-and-professionals">MOOC link</a>
 
 **26 July 2025**  
 Our paper "Virtualpatch: Distributing Android Security Patches Through Android Virtualization" has been accepted at **Computers & Security** journal!
