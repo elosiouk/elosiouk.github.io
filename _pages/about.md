@@ -12,6 +12,9 @@ Hi! My name is Eleonora and I am currently an Associate Professor at the Univers
 
 
 ## Latest News
+**May, 1 2026**  
+Our paper "E-Trojans: Ransomware, Tracking, DoS, and Data Leaks on the Xiaomi E-Scooter Ecosystem" has been accepted at **VehicleSec 2026**, co-located with Usenix 2026!
+
 **March, 25 2026**  
 Our paper "Evaluating LLM-based Regression Test Generation" has been accepted at **FSE 2026**!
 
