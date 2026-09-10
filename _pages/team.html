@@ -132,6 +132,32 @@ author_profile: true
     </div>
   {% endif %}
 
+  {% assign scholar_count = 0 %}
+  {% for post in site.team %}
+    {% if post.category == "scholar" %}
+      {% assign scholar_count = scholar_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if scholar_count > 0 %}
+    <h3>Research Scholars</h3>
+    <div class="team-section">
+      {% for post in site.team reversed %}
+        {% if post.category == "scholar" %}
+          <div class="team-member-card">
+            <div class="member-photo">
+              {% if post.image %}
+                <img src="{{ base_path }}/images/{{ post.image }}" alt="{{ post.title }}">
+              {% else %}
+                <div class="member-initials">{{ post.title | split: ' ' | map: 'first' | join: '' | truncate: 2, '' }}</div>
+              {% endif %}
+            </div>
+            <div class="member-name">{{ post.title }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
   {% assign engineer_count = 0 %}
   {% for post in site.team %}
     {% if post.category == "engineer" %}
