@@ -14,7 +14,7 @@ Hi! My name is Eleonora and I am currently an Associate Professor at the Univers
 ## Latest News
 
 **August, 10 2026**  
-I presented our paper "E-Trojans: Ransomware, Tracking, DoS, and Data Leaks on the Xiaomi E-Scooter Ecosystem" at **VehicleSec 2026**. Here is the online video: https://youtu.be/oKxF0UglXvw?si=8eLqbef9yi2302lG
+I presented our paper "E-Trojans: Ransomware, Tracking, DoS, and Data Leaks on the Xiaomi E-Scooter Ecosystem" at **VehicleSec 2026**. Here is the <a href="https://youtu.be/oKxF0UglXvw?si=8eLqbef9yi2302lG">online video</a>.
 
 **May, 1 2026**  
 Our paper "E-Trojans: Ransomware, Tracking, DoS, and Data Leaks on the Xiaomi E-Scooter Ecosystem" has been accepted at **VehicleSec 2026**, co-located with Usenix 2026!
