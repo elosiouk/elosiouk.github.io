@@ -5,7 +5,7 @@ permalink: /mobisec/
 author_profile: true
 ---
 
-## Mobile Security (2025-2026)
+## Mobile Security (2026-2027)
 
 **Language:** The course and the exam will be in English.
 
@@ -20,7 +20,7 @@ author_profile: true
 
 The course is very practical and it requires a high participation from the students. Thus, even if not mandatory, the participation in the class is strongly recommended to benefit from the interaction with other students and the teacher.
 
-**Schedule:** I semester (course schedule is published [HERE](https://agendastudentiunipd.easystaff.it/index.php?view=easycourse&form-type=attivita&include=attivita&anno=2025&attivita%5B%5D=EC916365&visualizzazione_orario=cal&periodo_didattico=&date=01-10-2025&_lang=it&list=&week_grid_type=-1&ar_codes_=&ar_select_=&col_cells=0&empty_box=0&only_grid=0&highlighted_date=0&all_events=0&faculty_group=0#)).
+**Schedule:** I semester (course schedule is published [HERE](https://agendastudentiunipd.easystaff.it/index.php?view=easycourse&form-type=attivita&include=attivita&anno=2026&attivita%5B%5D=EC960977&visualizzazione_orario=cal&periodo_didattico=&date=2026-09-29&_lang=it&list=&week_grid_type=-1&ar_codes_=&ar_select_=&col_cells=0&empty_box=0&only_grid=0&highlighted_date=0&all_events=0&faculty_group=0#)).
 
 ### Course Content
 
@@ -51,19 +51,3 @@ The final exam will be a set of multiple choice questions covering all the topic
 - 15 points achievable through practical questions
 
 The bonus cumulated through the presentation during the course is summed to the grade obtained at the exam. Since the participation is not mandatory, a student can get the maximum grade (i.e., 30L) even without attending the course.
-
-### Special Project Option for This Year
-
-Over the past few years, I have been working with my group on the virtualization technique and we have been using it for designing new attacks and new defence. Among the different projects, we have developed a solution, called VirtualPatch, to address the delay in distributing security patches for the Android OS. 
-
-The purpose of the project is to port the current VirtualPatch version, developed on top of VirtualApp on Android 9, to VirtualXposed on Android 13. 
-
-Since the project requires deep knowledge of the Android internals that will not be introduced during the course, I suggest to work on it in a small group (3/4 students). 
-
-Students choosing this option will have to present their design and implementation and to have an oral exam over the whole course contents. 
-
-Readings: 
-- S. Pizzi, S. Doria, N. Miazzo, E. Losiouk, "VirtualPatch: Distributing Android Security Patches Through Android Virtualization", Computers & Security [<a href="https://www.sciencedirect.com/science/article/pii/S0167404825003049?ref=pdf_download&fr=RR-2&rr=988a0a3369d80e6d">PDF</a>]
-- <a href="https://github.com/samudoria/virtualpatch_data">VirtualPatch GitHub project</a>
-- <a href="https://thesis.unipd.it/retrieve/abbd04af-acc0-4823-9711-296e0e1510e2/BoscoloMeneguolo_Luca.pdf">Towards Secure Virtual Apps: Bringing Application-Level Isolation to Android Virtualization</a>
-- <a href="https://thesis.unipd.it/retrieve/dc44b017-c3be-4e33-a220-889adfb355be/Lazari_Alberto.pdf">Towards Secure Virtual Apps: Bringing Android Permission Model to Application Virtualization</a>
