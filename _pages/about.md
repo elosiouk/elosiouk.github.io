@@ -13,6 +13,9 @@ Hi! My name is Eleonora and I am currently an Associate Professor at the Univers
 
 ## Latest News
 
+**October, 8 2026**  
+I am delighted to have been awarded the ISSTA 2026 Distinguished Reviewer Award!
+
 **August, 10 2026**  
 I presented our paper "E-Trojans: Ransomware, Tracking, DoS, and Data Leaks on the Xiaomi E-Scooter Ecosystem" at **VehicleSec 2026**. Here is the <a href="https://youtu.be/oKxF0UglXvw?si=8eLqbef9yi2302lG">online video</a>.
 
